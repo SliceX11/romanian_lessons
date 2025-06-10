@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Romanian Lessons</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body { 
+      font-family: 'Arial', sans-serif; 
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .card-container {
+      perspective: 1000px;
+      margin: 20px 0;
+    }
+    
+    .card {
+      width: 100%;
+      height: 300px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+      cursor: pointer;
+    }
+    
+    .card.flipped {
+      transform: rotateY(180deg);
+    }
+    
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    }
+    
+    .card-front {
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+      color: #333;
+    }
+    
+    .card-back {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      color: white;
+      transform: rotateY(180deg);
+    }
+    
+    .romanian-word {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #667eea;
+    }
+    
+    .transcription {
+      font-size: 1.3rem;
+      color: #666;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    
+    .card-back .transcription {
+      color: rgba(255,255,255,0.9);
+    }
+    
+    .russian-word {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .hint {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin-top: 20px;
+    }
+    
+    .audio-btn {
+      background: rgba(102, 126, 234, 0.2);
+      border: 2px solid rgba(102, 126, 234, 0.3);
+      color: #667eea;
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      margin: 10px 0;
+    }
+    
+    .card-back .audio-btn {
+      background: rgba(255,255,255,0.2);
+      border: 2px solid rgba(255,255,255,0.3);
+      color: white;
+    }
+    
+    .audio-btn:hover {
+      background: rgba(102, 126, 234, 0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .card-back .audio-btn:hover {
+      background: rgba(255,255,255,0.3);
+    }
+    
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
+    
+    .btn {
+      background: rgba(255,255,255,0.2);
+      border: 2px solid rgba(255,255,255,0.3);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+    
+    .btn:hover {
+      background: rgba(255,255,255,0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .btn-forgot { 
+      background: rgba(255, 100, 100, 0.3);
+      border-color: rgba(255, 100, 100, 0.5);
+    }
+    
+    .btn-remember { 
+      background: rgba(100, 255, 150, 0.3);
+      border-color: rgba(100, 255, 150, 0.5);
+    }
+    
+    .btn-back, .btn-primary {
+      background: rgba(0, 120, 255, 0.3);
+      border-color: rgba(0, 120, 255, 0.5);
+    }
+    
+    .menu { text-align: center; margin: 20px 0; }
+    
+    .menu-item { 
+      display: inline-block; 
+      margin: 10px; 
+      padding: 15px 25px; 
+      background: rgba(255,255,255,0.2);
+      border: 2px solid rgba(255,255,255,0.3);
+      color: white;
+      border-radius: 25px;
+      cursor: pointer; 
+      transition: all 0.3s ease;
+      font-size: 16px;
+      backdrop-filter: blur(10px);
+    }
+    
+    .menu-item:hover { 
+      background: rgba(255,255,255,0.3);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .hidden { display: none; }
+    
+    .progress { 
+      margin: 16px 0; 
+      text-align: center; 
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    
+    .finished { 
+      text-align: center; 
+      font-size: 1.2em; 
+      color: white;
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+    
+    h2 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+      
+      .romanian-word {
+        font-size: 2rem;
+      }
+      
+      .russian-word {
+        font-size: 1.5rem;
+      }
+      
+      .card {
+        height: 250px;
+      }
+      
+      .card-face {
+        padding: 20px;
+      }
+      
+      .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+      }
+      
+      .actions {
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+    }
+    
+    @media (max-width: 400px) {
+      .card {
+        height: 220px;
+      }
+      
+      .romanian-word {
+        font-size: 1.5rem;
+      }
+      
+      .russian-word {
+        font-size: 1.2rem;
+      }
+      
+      .btn {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Выбор урока -->
+    <div id="lesson-menu">
+      <h2>Выберите урок</h2>
+      <div class="menu">
+        <button class="menu-item" onclick="selectLesson(1)">Урок 1: Приветствие</button>
+        <button class="menu-item" onclick="selectLesson(2)">Урок 2: Дом и вещи</button>
+      </div>
+    </div>
+
+    <!-- Выбор тренировки -->
+    <div id="training-menu" class="hidden">
+      <h2 id="lesson-title">Урок 1</h2>
+      <div class="menu">
+        <button class="menu-item" onclick="startTraining('words')">Изучение слов</button>
+        <button class="menu-item" onclick="startTraining('dialogs')">Изучение диалогов</button>
+      </div>
+      <div style="text-align: center; margin-top: 20px;">
+        <button class="btn btn-back" onclick="showLessonMenu()">← Выбор урока</button>
+      </div>
+    </div>
+
+    <!-- Тренировка -->
+    <div id="training-area" class="hidden">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h2 id="training-title">Урок 1: Слова</h2>
+        <button class="btn btn-back" onclick="showTrainingMenu()">← Назад</button>
+      </div>
+      <div id="progress" class="progress"></div>
+      <div id="card-area"></div>
+      <div id="finished" class="finished" style="display:none;">
+        Поздравляем! Все карточки изучены.<br>
+        <button class="btn btn-primary" onclick="showTrainingMenu()" style="margin: 10px;">Выбор тренировки</button>
+        <button class="btn btn-back" onclick="showLessonMenu()">Выбор урока</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    let currentLesson = null;
+    let currentTrainingType = null;
+    let words = [];
+    let dialogs = [];
+    let queue = [];
+    let learned = [];
+    let current = 0;
+
+    // Навигация
+    function showLessonMenu() {
+      document.getElementById('lesson-menu').classList.remove('hidden');
+      document.getElementById('training-menu').classList.add('hidden');
+      document.getElementById('training-area').classList.add('hidden');
+    }
+
+    function showTrainingMenu() {
+      document.getElementById('lesson-menu').classList.add('hidden');
+      document.getElementById('training-menu').classList.remove('hidden');
+      document.getElementById('training-area').classList.add('hidden');
+    }
+
+    function showTrainingArea() {
+      document.getElementById('lesson-menu').classList.add('hidden');
+      document.getElementById('training-menu').classList.add('hidden');
+      document.getElementById('training-area').classList.remove('hidden');
+    }
+
+    // Выбор урока
+    async function selectLesson(lessonNumber) {
+      currentLesson = lessonNumber;
+      const res = await fetch(`lesson${lessonNumber}.json`);
+      const data = await res.json();
+      words = data.words || [];
+      dialogs = data.dialogs || [];
+      
+      document.getElementById('lesson-title').innerText = `Урок ${lessonNumber}`;
+      
+      // Проверяем доступность тренировок
+      const wordsBtn = document.querySelector('[onclick="startTraining(\'words\')"]');
+      const dialogsBtn = document.querySelector('[onclick="startTraining(\'dialogs\')"]');
+      
+      wordsBtn.style.display = words.length > 0 ? 'inline-block' : 'none';
+      dialogsBtn.style.display = dialogs.length > 0 ? 'inline-block' : 'none';
+      
+      showTrainingMenu();
+    }
+
+    // Начало тренировки
+    function startTraining(type) {
+      currentTrainingType = type;
+      const title = type === 'words' ? 'Слова' : 'Диалоги';
+      document.getElementById('training-title').innerText = `Урок ${currentLesson}: ${title}`;
+      
+      if (type === 'words') {
+        queue = [...Array(words.length).keys()];
+      } else {
+        // Разворачиваем диалоги в отдельные карточки
+        queue = [];
+        dialogs.forEach((dialog, dialogIndex) => {
+          dialog.forEach((phrase, phraseIndex) => {
+            queue.push({ dialogIndex, phraseIndex });
+          });
+        });
+      }
+      
+      learned = [];
+      current = 0;
+      document.getElementById('finished').style.display = 'none';
+      showTrainingArea();
+      showCard();
+    }
+
+    function showCard() {
+      const cardArea = document.getElementById('card-area');
+      if (queue.length === 0) {
+        cardArea.innerHTML = '';
+        document.getElementById('progress').innerText = '';
+        document.getElementById('finished').style.display = 'block';
+        return;
+      }
+      
+      document.getElementById('progress').innerText = `Осталось: ${queue.length}`;
+      
+      let cardData;
+      if (currentTrainingType === 'words') {
+        const idx = queue[current];
+        cardData = words[idx];
+      } else {
+        const { dialogIndex, phraseIndex } = queue[current];
+        cardData = dialogs[dialogIndex][phraseIndex];
+      }
+      
+      // Проверяем, есть ли перевод на русском, если нет — выводим "—"
+      const ruText = (cardData.ru && cardData.ru !== '-') ? cardData.ru : '<span style="color:#bbb;">Нет перевода</span>';
+      
+      cardArea.innerHTML = `
+        <div class="card-container">
+          <div class="card" id="card">
+            <div class="card-face card-front">
+              <div class="romanian-word">${cardData.ro}</div>
+              <div class="transcription">${cardData.transcription}</div>
+              <button class="audio-btn" onclick="playAudio('${cardData.audio}');event.stopPropagation();">🔊 Прослушать</button>
+              <div class="hint">Нажмите, чтобы увидеть перевод</div>
+            </div>
+            <div class="card-face card-back">
+              <div class="russian-word">${ruText}</div>
+              <div class="transcription">${cardData.transcription}</div>
+              <button class="audio-btn" onclick="playAudio('${cardData.audio}');event.stopPropagation();">🔊 Прослушать</button>
+              <div class="hint">Нажмите, чтобы вернуться</div>
+            </div>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="btn btn-forgot" onclick="forgot()">Не помню</button>
+          <button class="btn btn-remember" onclick="remember()">Запомнил</button>
+        </div>
+      `;
+      
+      const card = document.getElementById('card');
+      card.addEventListener('click', function(e) {
+        if (e.target.classList.contains('audio-btn')) return;
+        card.classList.toggle('flipped');
+      });
+    }
+
+    function playAudio(filename) {
+      const audio = new Audio('audio/' + filename);
+      audio.play();
+    }
+
+    function forgot() {
+      // Просто переходим к следующей карточке
+      current = (current + 1) % queue.length;
+      showCard();
+    }
+
+    function remember() {
+      // Удаляем текущую карточку из очереди
+      queue.splice(current, 1);
+      if (current >= queue.length) current = 0;
+      showCard();
+    }
+
+    // Запуск приложения
+    window.onload = function() {
+      showLessonMenu();
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "words": [
+    {"ro": "Casa", "ru": "Дом", "transcription": "[каса]", "audio": "casa.mp3"},
+    {"ro": "Mașina", "ru": "Машина", "transcription": "[машина]", "audio": "masina.mp3"},
+    {"ro": "Școala", "ru": "Школа", "transcription": "[школа]", "audio": "scoala.mp3"},
+    {"ro": "Magazin", "ru": "Магазин", "transcription": "[магазин]", "audio": "magazin.mp3"},
+    {"ro": "Apă", "ru": "Вода", "transcription": "[апэ]", "audio": "apa.mp3"}
+  ],
+  "dialogs": [
+    [
+      {"ro": "Unde este casa?", "ru": "Где дом?", "transcription": "[унде есте каса]", "audio": "unde_este_casa.mp3"},
+      {"ro": "Casa este aici.", "ru": "Дом здесь.", "transcription": "[каса есте аич]", "audio": "casa_este_aici.mp3"}
+    ]
+  ]
+}
