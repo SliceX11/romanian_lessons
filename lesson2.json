@@ -1,15 +1,60 @@
 {
   "words": [
-    {"ro": "Casa", "ru": "Дом", "transcription": "[каса]", "audio": "casa.mp3"},
-    {"ro": "Mașina", "ru": "Машина", "transcription": "[машина]", "audio": "masina.mp3"},
-    {"ro": "Școala", "ru": "Школа", "transcription": "[школа]", "audio": "scoala.mp3"},
-    {"ro": "Magazin", "ru": "Магазин", "transcription": "[магазин]", "audio": "magazin.mp3"},
-    {"ro": "Apă", "ru": "Вода", "transcription": "[апэ]", "audio": "apa.mp3"}
+    {"ro": "Bună dimineața!", "ru": "Доброе утро!", "transcription": "[ˈбунэ димиˈняца]", "audio": "buna_dimineata.mp3"},
+    {"ro": "Cine?", "ru": "Кто?", "transcription": "[ˈчине]", "audio": "cine.mp3"},
+    {"ro": "Bună ziua!", "ru": "Добрый день!", "transcription": "[ˈбунэ ˈзиуа]", "audio": "buna_ziua.mp3"},
+    {"ro": "Unde?", "ru": "Где?", "transcription": "[ˈунде]", "audio": "unde.mp3"},
+    {"ro": "Bună seara!", "ru": "Добрый вечер!", "transcription": "[ˈбунэ ˈсеара]", "audio": "buna_seara.mp3"},
+    {"ro": "De unde?", "ru": "Откуда?", "transcription": "[де ˈунде]", "audio": "de_unde.mp3"},
+    {"ro": "Mulțumesc.", "ru": "Спасибо", "transcription": "[мульцуˈмеск]", "audio": "multumesc.mp3"},
+    {"ro": "Ce?", "ru": "Что?", "transcription": "[че]", "audio": "ce.mp3"},
+    {"ro": "Mă bucur", "ru": "Я рад(а)", "transcription": "[мэ буˈкур]", "audio": "ma_bucur.mp3"},
+    {"ro": "Ce mai faceți?", "ru": "Как дела?", "transcription": "[че май фаˈчець]", "audio": "ce_mai_faceti.mp3"},
+    {"ro": "La revedere!", "ru": "До свиданья!", "transcription": "[ла ревеˈдере]", "audio": "la_revedere.mp3"}
   ],
   "dialogs": [
     [
-      {"ro": "Unde este casa?", "ru": "Где дом?", "transcription": "[унде есте каса]", "audio": "unde_este_casa.mp3"},
-      {"ro": "Casa este aici.", "ru": "Дом здесь.", "transcription": "[каса есте аич]", "audio": "casa_este_aici.mp3"}
+      {"ro": "Bine ați venit!", "ru": "Добро пожаловать!", "transcription": "[ˈбине аць веˈнит]", "audio": "bine_ati_venit.mp3"},
+      {"ro": "Bine v-am găsit!", "ru": "Рад вас видеть!", "transcription": "[ˈбине вам гэˈсит]", "audio": "bine_vam_gasit.mp3"}
+    ],
+    [
+      {"ro": "Mă bucur să vă văd!", "ru": "Рад вас видеть!", "transcription": "[мэ буˈкур сэ вэ вэд]", "audio": "ma_bucur_sa_va_ved.mp3"},
+      {"ro": "Și eu mă bucur să vă văd!", "ru": "И я рад вас видеть!", "transcription": "[ши еу мэ буˈкур сэ вэ вэд]", "audio": "si_eu_ma_bucur_sa_va_ved.mp3"}
+    ],
+    [
+      {"ro": "Bună ziua!", "ru": "Добрый день!", "transcription": "[ˈбунэ ˈзиуа]", "audio": "buna_ziua.mp3"},
+      {"ro": "Bună ziua! Cum vă numiți?", "ru": "Добрый день! Как вас зовут?", "transcription": "[ˈбунэ ˈзиуа! кум вэ нумиˈць]", "audio": "buna_ziua_cum_va_numiti.mp3"},
+      {"ro": "Eu sunt Stanislav Svarichevsky .", "ru": "Я Станислав Сваричевский.", "transcription": "[еу сунт ...]", "audio": "eu_sunt_stanislav.mp3"},
+      {"ro": "Câți ani aveți?", "ru": "Сколько вам лет?", "transcription": "[кыць ань авеˈць]", "audio": "cati_ani_aveti.mp3"},
+      {"ro": "Eu am cincizeci de ani.", "ru": "Мне пятьдесят лет.", "transcription": "[еу ам чинчиˈзеч де ань]", "audio": "eu_am_50_de_ani.mp3"},
+      {"ro": "De unde sunteți?", "ru": "Откуда вы?", "transcription": "[де ˈунде сунˈтець]", "audio": "de_unde_sunteti.mp3"},
+      {"ro": "Sunt din Rusia.", "ru": "Я из России.", "transcription": "[сунт дин ˈрусия]", "audio": "sunt_din_rusia.mp3"}
+    ],
+    [
+      {"ro": "Bună dimineața!", "ru": "Доброе утро!", "transcription": "[ˈбунэ димиˈняца]", "audio": "buna_dimineata.mp3"},
+      {"ro": "Bună dimineața! Care este numele și prenumele Dumneavoastră?", "ru": "Доброе утро! Какие ваши имя и фамилия?", "transcription": "[ˈбунэ димиˈняца! ˈкаре ˈесте ˈнумеле ши преˈнумеле думняˈвоастрэ]", "audio": "buna_dimineata_care_este_numele.mp3"},
+      {"ro": "Numele și prenumele meu este Stanislav Svarichevsky.", "ru": "Мое имя и фамилия - Станислав Сваричевский.", "transcription": "[ˈнумеле ши преˈнумеле мэу ˈесте ...]", "audio": "numele_meu_este_stanislav.mp3"},
+      {"ro": "Ce vârstă aveți?", "ru": "Какой у вас возраст?", "transcription": "[че ˈвырстэ авеˈць]", "audio": "ce_varsta_aveti.mp3"},
+      {"ro": "Am cincizeci de ani.", "ru": "Мне пятьдесят лет.", "transcription": "[ам чинчиˈзеч де ань]", "audio": "am_50_de_ani.mp3"},
+      {"ro": "Unde locuiți?", "ru": "Где вы живете?", "transcription": "[ˈунде локуˈиць]", "audio": "unde_locuiti.mp3"},
+      {"ro": "Locuiesc în Georgia.", "ru": "Я живу в Грузии.", "transcription": "[локуˈйеск ын джорˈджия]", "audio": "locuiesc_in_georgia.mp3"}
+    ],
+    [
+      {"ro": "Bună ziua!", "ru": "Добрый день!", "transcription": "[ˈбунэ ˈзиуа]", "audio": "buna_ziua.mp3"},
+      {"ro": "Bună ziua! Prezentați-vă, vă rog!", "ru": "Добрый день! Представьтесь, пожалуйста!", "transcription": "[ˈбунэ ˈзиуа! презентаˈциве, вэ рог]", "audio": "buna_ziua_prezentati_va.mp3"},
+      {"ro": "Eu mă numesc Stanislav Svarichevsky, și locuiesc în Georgia.", "ru": "Меня зовут Станислав Сваричевский, и я живу в Грузии.", "transcription": "[еу мэ нуˈмеск ... ши локуˈйеск ын джорˈджия]", "audio": "eu_ma_numesc_stanislav.mp3"},
+      {"ro": "Sunteți Alexandru?", "ru": "Вы Александру?", "transcription": "[сунˈтець алекˈсандру]", "audio": "sunteti_alexandru.mp3"},
+      {"ro": "Nu, eu sunt Stanislav Svarichevsky.", "ru": "Нет, я Станислав Сваричевский.", "transcription": "[ну, еу сунт ...]", "audio": "nu_eu_sunt_stanislav.mp3"}
+    ],
+    [
+      {"ro": "Bună ziua! Prezentați-vă!", "ru": "Добрый день! Представьтесь!", "transcription": "[ˈбунэ ˈзиуа! презентаˈциве]", "audio": "buna_ziua_prezentati_va.mp3"},
+      {"ro": "Bună ziua! Sunt Stanislav Svarichevsky.", "ru": "Добрый день! Я Станислав Сваричевский.", "transcription": "[ˈбунэ ˈзиуа! сунт ...]", "audio": "buna_ziua_sunt_stanislav.mp3"},
+      {"ro": "Sunteți Alexandru?", "ru": "Вы Александру?", "transcription": "[сунˈтець алекˈсандру]", "audio": "sunteti_alexandru.mp3"},
+      {"ro": "Nu, eu sunt Stanislav Svarichevsky.", "ru": "Нет, я Станислав Сваричевский.", "transcription": "[ну, еу сунт ...]", "audio": "nu_eu_sunt_stanislav.mp3"},
+      {"ro": "Ce vârstă aveți?", "ru": "Какой у вас возраст?", "transcription": "[че ˈвырстэ авеˈць]", "audio": "ce_varsta_aveti.mp3"},
+      {"ro": "Eu am cincizeci de ani.", "ru": "Мне пятьдесят лет.", "transcription": "[еу ам чинчиˈзеч де ань]", "audio": "eu_am_50_de_ani.mp3"},
+      {"ro": "Mulțumesc!", "ru": "Спасибо!", "transcription": "[мульцуˈмеск]", "audio": "multumesc.mp3"},
+      {"ro": "La revedere!", "ru": "До свидания!", "transcription": "[ла ревеˈдере]", "audio": "la_revedere.mp3"}
     ]
   ]
 }
