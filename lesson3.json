@@ -47,6 +47,24 @@
     {"ro": "Ce oră este?", "ru": "Который час?", "transcription": "[че ˈорэ ˈесте]", "audio": "ce_ora_este.mp3"},
     {"ro": "Data nașterii", "ru": "Дата рождения", "transcription": "[ˈдата нэштеˈрий]", "audio": "data_nasterii.mp3"}
   ],
+  "time_expressions": [
+    {"ro": "ora", "ru": "час", "transcription": "[ˈора]", "audio": "ora.mp3"},
+    {"ro": "minute", "ru": "минуты", "transcription": "[миˈнуте]", "audio": "minute.mp3"},
+    {"ro": "și", "ru": "и", "transcription": "[шь]", "audio": "si.mp3"},
+    {"ro": "fără", "ru": "без", "transcription": "[ˈфэрэ]", "audio": "fara_time.mp3"},
+    {"ro": "un sfert", "ru": "четверть", "transcription": "[ун сферт]", "audio": "un_sfert_time.mp3"},
+    {"ro": "jumătate", "ru": "половина", "transcription": "[жумэˈтате]", "audio": "jumatate_time.mp3"},
+    {"ro": "fără un sfert", "ru": "без четверти", "transcription": "[ˈфэрэ ун сферт]", "audio": "fara_un_sfert.mp3"},
+    {"ro": "fără zece", "ru": "без десяти", "transcription": "[ˈфэрэ ˈзече]", "audio": "fara_zece.mp3"},
+    {"ro": "și un sfert", "ru": "и четверть", "transcription": "[шь ун сферт]", "audio": "si_un_sfert.mp3"},
+    {"ro": "și jumătate", "ru": "и половина", "transcription": "[шь жумэˈтате]", "audio": "si_jumatate.mp3"},
+    {"ro": "și zece", "ru": "и десять", "transcription": "[шь ˈзече]", "audio": "si_zece.mp3"},
+    {"ro": "și cincisprezece", "ru": "и пятнадцать", "transcription": "[шь чинчиспреˈзече]", "audio": "si_cincisprezece.mp3"},
+    {"ro": "și douăzeci", "ru": "и двадцать", "transcription": "[шь доуэˈзечь]", "audio": "si_douazeci.mp3"},
+    {"ro": "și douăzeci și cinci", "ru": "и двадцать пять", "transcription": "[шь доуэˈзечь шь ˈчинчь]", "audio": "si_douazeci_si_cinci.mp3"},
+    {"ro": "și treizeci", "ru": "и тридцать", "transcription": "[шь трейˈзечь]", "audio": "si_treizeci.mp3"},
+    {"ro": "fără cinci", "ru": "без пяти", "transcription": "[ˈфэрэ ˈчинчь]", "audio": "fara_cinci.mp3"}
+  ],
   "dialogs": [
     [
       {"ro": "Cât este ora? Cât e ora? Ce oră este?", "ru": "Сколько сейчас времени?", "transcription": "[кыт ˈесте ˈора? кыт е ˈора? че ˈорэ ˈесте?]", "audio": "cat_este_ora_dialog.mp3"}

@@ -286,6 +286,7 @@
       <div class="menu">
         <button class="menu-item" onclick="startTraining('words')">Изучение слов</button>
         <button class="menu-item" onclick="startTraining('dialogs')">Изучение диалогов</button>
+        <button class="menu-item" onclick="startTraining('time')" id="time-btn" style="display: none;">Изучаем время</button>
       </div>
       <div style="text-align: center; margin-top: 20px;">
         <button class="btn btn-back" onclick="showLessonMenu()">← Выбор урока</button>
@@ -312,9 +313,11 @@
     let currentTrainingType = null;
     let words = [];
     let dialogs = [];
+    let timeExpressions = [];
     let queue = [];
     let learned = [];
     let current = 0;
+    let timeQuestions = 20; // Начальное количество вопросов времени
 
     // Навигация
     function showLessonMenu() {
@@ -342,15 +345,18 @@
       const data = await res.json();
       words = data.words || [];
       dialogs = data.dialogs || [];
+      timeExpressions = data.time_expressions || [];
       
       document.getElementById('lesson-title').innerText = `Урок ${lessonNumber}`;
       
       // Проверяем доступность тренировок
       const wordsBtn = document.querySelector('[onclick="startTraining(\'words\')"]');
       const dialogsBtn = document.querySelector('[onclick="startTraining(\'dialogs\')"]');
+      const timeBtn = document.getElementById('time-btn');
       
       wordsBtn.style.display = words.length > 0 ? 'inline-block' : 'none';
       dialogsBtn.style.display = dialogs.length > 0 ? 'inline-block' : 'none';
+      timeBtn.style.display = (lessonNumber === 3 && timeExpressions.length > 0) ? 'inline-block' : 'none';
       
       showTrainingMenu();
     }
@@ -358,12 +364,13 @@
     // Начало тренировки
     function startTraining(type) {
       currentTrainingType = type;
-      const title = type === 'words' ? 'Слова' : 'Диалоги';
-      document.getElementById('training-title').innerText = `Урок ${currentLesson}: ${title}`;
+      let title = '';
       
       if (type === 'words') {
+        title = 'Слова';
         queue = [...Array(words.length).keys()];
-      } else {
+      } else if (type === 'dialogs') {
+        title = 'Диалоги';
         // Разворачиваем диалоги в отдельные карточки
         queue = [];
         dialogs.forEach((dialog, dialogIndex) => {
@@ -371,13 +378,110 @@
             queue.push({ dialogIndex, phraseIndex });
           });
         });
+      } else if (type === 'time') {
+        title = 'Изучаем время';
+        queue = Array.from({length: timeQuestions}, (_, i) => i);
       }
+      
+      document.getElementById('training-title').innerText = `Урок ${currentLesson}: ${title}`;
       
       learned = [];
       current = 0;
       document.getElementById('finished').style.display = 'none';
       showTrainingArea();
       showCard();
+    }
+
+    function generateRandomTime() {
+      const hours = Math.floor(Math.random() * 24);
+      const minutes = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55][Math.floor(Math.random() * 12)];
+      return { hours, minutes };
+    }
+
+    function formatTimeInRussian(hours, minutes) {
+      const hourNames = [
+        'ноль', 'час', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять', 'десять',
+        'одиннадцать', 'двенадцать', 'тринадцать', 'четырнадцать', 'пятнадцать', 'шестнадцать',
+        'семнадцать', 'восемнадцать', 'девятнадцать', 'двадцать', 'двадцать один', 'двадцать два', 'двадцать три'
+      ];
+
+      if (minutes === 0) {
+        return `${hourNames[hours]} часов ровно`;
+      } else if (minutes === 15) {
+        return `четверть ${hourNames[hours + 1] || hourNames[hours]}`;
+      } else if (minutes === 30) {
+        return `половина ${hourNames[hours + 1] || hourNames[hours]}`;
+      } else if (minutes === 45) {
+        return `без четверти ${hourNames[hours + 1] || hourNames[hours]}`;
+      } else if (minutes === 50) {
+        return `без десяти ${hourNames[hours + 1] || hourNames[hours]}`;
+      } else if (minutes === 55) {
+        return `без пяти ${hourNames[hours + 1] || hourNames[hours]}`;
+      } else if (minutes <= 30) {
+        const minuteNames = ['', '', '', '', '', 'пять', '', '', '', '', 'десять', '', '', '', '', '', '', '', '', '', 'двадцать', '', '', '', '', 'двадцать пять'];
+        return `${hourNames[hours]} ${minuteNames[minutes]}`;
+      } else {
+        const remainingMinutes = 60 - minutes;
+        const minuteNames = ['', '', '', '', '', 'пять', '', '', '', '', 'десять', '', '', '', '', '', '', '', '', '', 'двадцать', '', '', '', '', 'двадцать пять'];
+        return `без ${minuteNames[remainingMinutes]} ${hourNames[hours + 1] || hourNames[hours]}`;
+      }
+    }
+
+    function formatTimeInRomanian(hours, minutes) {
+      const romanianHours = [
+        'zero', 'unu', 'doi', 'trei', 'patru', 'cinci', 'șase', 'șapte', 'opt', 'nouă', 'zece',
+        'unsprezece', 'doisprezece', 'treisprezece', 'paisprezece', 'cincisprezece', 'șaisprezece',
+        'șaptesprezece', 'optsprezece', 'nouăsprezece', 'douăzeci', 'douăzeci și unu', 'douăzeci și doi', 'douăzeci și trei'
+      ];
+
+      const transcriptions = [
+        '[ˈзеро]', '[ˈуну]', '[дой]', '[трей]', '[ˈпатру]', '[ˈчинчь]', '[ˈшасе]', '[ˈшапте]', '[опт]', '[ˈноуэ]', '[ˈзече]',
+        '[унспреˈзече]', '[дойспреˈзече]', '[трейспреˈзече]', '[пайспреˈзече]', '[чинчиспреˈзече]', '[шайспреˈзече]',
+        '[шаптеспреˈзече]', '[оптспреˈзече]', '[ноуэспреˈзече]', '[доуэˈзечь]', '[доуэˈзечь шь ˈуну]', '[доуэˈзечь шь дой]', '[доуэˈзечь шь трей]'
+      ];
+
+      if (minutes === 0) {
+        return {
+          text: `Ora ${romanianHours[hours]}`,
+          transcription: `[ˈора ${transcriptions[hours].slice(1, -1)}]`
+        };
+      } else if (minutes === 15) {
+        return {
+          text: `Ora ${romanianHours[hours]} și un sfert`,
+          transcription: `[ˈора ${transcriptions[hours].slice(1, -1)} шь ун сферт]`
+        };
+      } else if (minutes === 30) {
+        return {
+          text: `Ora ${romanianHours[hours]} și jumătate`,
+          transcription: `[ˈора ${transcriptions[hours].slice(1, -1)} шь жумэˈтате]`
+        };
+      } else if (minutes === 45) {
+        const nextHour = (hours + 1) % 24;
+        return {
+          text: `Ora ${romanianHours[nextHour]} fără un sfert`,
+          transcription: `[ˈора ${transcriptions[nextHour].slice(1, -1)} ˈфэрэ ун сферт]`
+        };
+      } else if (minutes === 50) {
+        const nextHour = (hours + 1) % 24;
+        return {
+          text: `Ora ${romanianHours[nextHour]} fără zece`,
+          transcription: `[ˈора ${transcriptions[nextHour].slice(1, -1)} ˈфэрэ ˈзече]`
+        };
+      } else if (minutes === 55) {
+        const nextHour = (hours + 1) % 24;
+        return {
+          text: `Ora ${romanianHours[nextHour]} fără cinci`,
+          transcription: `[ˈора ${transcriptions[nextHour].slice(1, -1)} ˈфэрэ ˈчинчь]`
+        };
+      } else {
+        const minuteWords = ['', '', '', '', '', 'cinci', '', '', '', '', 'zece', '', '', '', '', 'cincisprezece', '', '', '', '', 'douăzeci', '', '', '', '', 'douăzeci și cinci'];
+        const minuteTranscriptions = ['', '', '', '', '', '[ˈчинчь]', '', '', '', '', '[ˈзече]', '', '', '', '', '[чинчиспреˈзече]', '', '', '', '', '[доуэˈзечь]', '', '', '', '', '[доуэˈзечь шь ˈчинчь]'];
+        
+        return {
+          text: `Ora ${romanianHours[hours]} și ${minuteWords[minutes]}`,
+          transcription: `[ˈора ${transcriptions[hours].slice(1, -1)} шь ${minuteTranscriptions[minutes].slice(1, -1)}]`
+        };
+      }
     }
 
     function showCard() {
@@ -392,7 +496,19 @@
       document.getElementById('progress').innerText = `Осталось: ${queue.length}`;
       
       let cardData;
-      if (currentTrainingType === 'words') {
+      if (currentTrainingType === 'time') {
+        // Генерируем случайное время
+        const time = generateRandomTime();
+        const russianTime = formatTimeInRussian(time.hours, time.minutes);
+        const romanianTime = formatTimeInRomanian(time.hours, time.minutes);
+        
+        cardData = {
+          ro: romanianTime.text,
+          ru: russianTime,
+          transcription: romanianTime.transcription,
+          audio: 'clock_tick.mp3' // Можно добавить звук тиканья часов
+        };
+      } else if (currentTrainingType === 'words') {
         const idx = queue[current];
         cardData = words[idx];
       } else {
@@ -403,20 +519,26 @@
       // Проверяем, есть ли перевод на русском, если нет — выводим "—"
       const ruText = (cardData.ru && cardData.ru !== '-') ? cardData.ru : '<span style="color:#bbb;">Нет перевода</span>';
       
+      // Для режима времени показываем сначала русское время
+      const frontText = currentTrainingType === 'time' ? ruText : cardData.ro;
+      const backText = currentTrainingType === 'time' ? cardData.ro : ruText;
+      const frontHint = currentTrainingType === 'time' ? 'Как это сказать по-румынски?' : 'Нажмите, чтобы увидеть перевод';
+      const backHint = currentTrainingType === 'time' ? 'Нажмите, чтобы вернуться' : 'Нажмите, чтобы вернуться';
+      
       cardArea.innerHTML = `
         <div class="card-container">
           <div class="card" id="card">
             <div class="card-face card-front">
-              <div class="romanian-word">${cardData.ro}</div>
-              <div class="transcription">${cardData.transcription}</div>
-              <button class="audio-btn" onclick="playAudio('${cardData.audio}');event.stopPropagation();">🔊 Прослушать</button>
-              <div class="hint">Нажмите, чтобы увидеть перевод</div>
+              <div class="romanian-word">${frontText}</div>
+              ${currentTrainingType === 'time' ? '' : `<div class="transcription">${cardData.transcription}</div>`}
+              ${cardData.audio ? `<button class="audio-btn" onclick="playAudio('${cardData.audio}');event.stopPropagation();">🔊 Прослушать</button>` : ''}
+              <div class="hint">${frontHint}</div>
             </div>
             <div class="card-face card-back">
-              <div class="russian-word">${ruText}</div>
+              <div class="russian-word">${backText}</div>
               <div class="transcription">${cardData.transcription}</div>
-              <button class="audio-btn" onclick="playAudio('${cardData.audio}');event.stopPropagation();">🔊 Прослушать</button>
-              <div class="hint">Нажмите, чтобы вернуться</div>
+              ${cardData.audio ? `<button class="audio-btn" onclick="playAudio('${cardData.audio}');event.stopPropagation();">🔊 Прослушать</button>` : ''}
+              <div class="hint">${backHint}</div>
             </div>
           </div>
         </div>
@@ -439,15 +561,29 @@
     }
 
     function forgot() {
-      // Просто переходим к следующей карточке
-      current = (current + 1) % queue.length;
+      if (currentTrainingType === 'time') {
+        // Для режима времени добавляем 3 новых вопроса
+        for (let i = 0; i < 3; i++) {
+          queue.push(queue.length);
+        }
+        current = (current + 1) % queue.length;
+      } else {
+        // Для обычных режимов просто переходим к следующей карточке
+        current = (current + 1) % queue.length;
+      }
       showCard();
     }
 
     function remember() {
-      // Удаляем текущую карточку из очереди
-      queue.splice(current, 1);
-      if (current >= queue.length) current = 0;
+      if (currentTrainingType === 'time') {
+        // Для режима времени убираем текущий вопрос
+        queue.splice(current, 1);
+        if (current >= queue.length) current = 0;
+      } else {
+        // Для обычных режимов удаляем карточку из очереди
+        queue.splice(current, 1);
+        if (current >= queue.length) current = 0;
+      }
       showCard();
     }
 
