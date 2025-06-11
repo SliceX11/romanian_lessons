@@ -47,7 +47,7 @@
       {"ro": "Așteptați, vă rog!", "ru": "Подождите, пожалуйста!", "transcription": "[аштепˈтаць, вэ рог]", "audio": "asteptati_va_rog.mp3"}
     ],
     [
-      {"ro": "Scuzați, dar nu țin minte.", "ru": "Извините, но я не знаю.", "transcription": "[скуˈзаць, дар ну цин ˈминте]", "audio": "scuzati_dar_nu_tin_minte.mp3"}
+      {"ro": "Scuzați, dar nu țin minte.", "ru": "Извините, но я не помню.", "transcription": "[скуˈзаць, дар ну цин ˈминте]", "audio": "scuzati_dar_nu_tin_minte.mp3"}
     ],
     [
       {"ro": "Poftim!", "ru": "Пожалуйста! (прошу, возьмите)", "transcription": "[ˈпофтим]", "audio": "poftim.mp3"}

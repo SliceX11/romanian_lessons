@@ -1,0 +1,103 @@
+{
+  "words": [
+    {"ro": "Zero", "ru": "Ноль", "transcription": "[ˈзеро]", "audio": "zero.mp3"},
+    {"ro": "Unu", "ru": "Один", "transcription": "[ˈуну]", "audio": "unu.mp3"},
+    {"ro": "Doi (Două)", "ru": "Два", "transcription": "[дой (ˈдоуэ)]", "audio": "doi_doua.mp3"},
+    {"ro": "Trei", "ru": "Три", "transcription": "[трей]", "audio": "trei.mp3"},
+    {"ro": "Patru", "ru": "Четыре", "transcription": "[ˈпатру]", "audio": "patru.mp3"},
+    {"ro": "Cinci", "ru": "Пять", "transcription": "[ˈчинчь]", "audio": "cinci.mp3"},
+    {"ro": "Șase", "ru": "Шесть", "transcription": "[ˈшасе]", "audio": "sase.mp3"},
+    {"ro": "Șapte", "ru": "Семь", "transcription": "[ˈшапте]", "audio": "sapte.mp3"},
+    {"ro": "Opt", "ru": "Восемь", "transcription": "[опт]", "audio": "opt.mp3"},
+    {"ro": "Nouă", "ru": "Девять", "transcription": "[ˈноуэ]", "audio": "noua.mp3"},
+    {"ro": "Zece", "ru": "Десять", "transcription": "[ˈзече]", "audio": "zece.mp3"},
+    {"ro": "Unsprezece", "ru": "Одиннадцать", "transcription": "[унспреˈзече]", "audio": "unsprezece.mp3"},
+    {"ro": "Doisprezece", "ru": "Двенадцать", "transcription": "[дойспреˈзече]", "audio": "doisprezece.mp3"},
+    {"ro": "Treisprezece", "ru": "Тринадцать", "transcription": "[трейспреˈзече]", "audio": "treisprezece.mp3"},
+    {"ro": "Paisprezece", "ru": "Четырнадцать", "transcription": "[пайспреˈзече]", "audio": "paisprezece.mp3"},
+    {"ro": "Cincisprezece", "ru": "Пятнадцать", "transcription": "[чинчиспреˈзече]", "audio": "cincisprezece.mp3"},
+    {"ro": "Șaisprezece", "ru": "Шестнадцать", "transcription": "[шайспреˈзече]", "audio": "saisprezece.mp3"},
+    {"ro": "Șaptesprezece", "ru": "Семнадцать", "transcription": "[шаптеспреˈзече]", "audio": "saptesprezece.mp3"},
+    {"ro": "Optsprezece", "ru": "Восемнадцать", "transcription": "[оптспреˈзече]", "audio": "optsprezece.mp3"},
+    {"ro": "Nouăsprezece", "ru": "Девятнадцать", "transcription": "[ноуэспреˈзече]", "audio": "nouasprezece.mp3"},
+    {"ro": "Douăzeci", "ru": "Двадцать", "transcription": "[доуэˈзечь]", "audio": "douazeci.mp3"},
+    {"ro": "Douăzeci și unu", "ru": "Двадцать один", "transcription": "[доуэˈзечь шь ˈуну]", "audio": "douazeci_si_unu.mp3"},
+    {"ro": "Douăzeci și doi", "ru": "Двадцать два", "transcription": "[доуэˈзечь шь дой]", "audio": "douazeci_si_doi.mp3"},
+    {"ro": "Treizeci", "ru": "Тридцать", "transcription": "[трейˈзечь]", "audio": "treizeci.mp3"},
+    {"ro": "Patruzeci", "ru": "Сорок", "transcription": "[патруˈзечь]", "audio": "patruzeci.mp3"},
+    {"ro": "Cincizeci", "ru": "Пятьдесят", "transcription": "[чинчиˈзечь]", "audio": "cincizeci.mp3"},
+    {"ro": "Șaizeci", "ru": "Шестьдесят", "transcription": "[шайˈзечь]", "audio": "saizeci.mp3"},
+    {"ro": "Șaptezeci", "ru": "Семьдесят", "transcription": "[шаптеˈзечь]", "audio": "saptezeci.mp3"},
+    {"ro": "Optzeci", "ru": "Восемьдесят", "transcription": "[оптˈзечь]", "audio": "optzeci.mp3"},
+    {"ro": "Nouăzeci", "ru": "Девяносто", "transcription": "[ноуэˈзечь]", "audio": "nouazeci.mp3"},
+    {"ro": "O sută", "ru": "Сто", "transcription": "[о ˈсутэ]", "audio": "o_suta.mp3"},
+    {"ro": "O sută unu", "ru": "Сто один", "transcription": "[о ˈсутэ ˈуну]", "audio": "o_suta_unu.mp3"},
+    {"ro": "Două sute", "ru": "Двести", "transcription": "[ˈдоуэ ˈсуте]", "audio": "doua_sute.mp3"},
+    {"ro": "Trei sute", "ru": "Триста", "transcription": "[трей ˈсуте]", "audio": "trei_sute.mp3"},
+    {"ro": "O mie", "ru": "Тысяча", "transcription": "[о ˈмие]", "audio": "o_mie.mp3"},
+    {"ro": "Două mii", "ru": "Две тысячи", "transcription": "[ˈдоуэ мий]", "audio": "doua_mii.mp3"},
+    {"ro": "Un milion", "ru": "Миллион", "transcription": "[ун милиˈон]", "audio": "un_milion.mp3"},
+    {"ro": "Două milioane", "ru": "Два миллиона", "transcription": "[ˈдоуэ милиˈоане]", "audio": "doua_milioane.mp3"},
+    {"ro": "Un miliard", "ru": "Миллиард", "transcription": "[ун милиˈард]", "audio": "un_miliard.mp3"},
+    {"ro": "Două miliarde", "ru": "Два миллиарда", "transcription": "[ˈдоуэ милиˈарде]", "audio": "doua_miliarde.mp3"},
+    {"ro": "Jumătate", "ru": "Половина", "transcription": "[жумэˈтате]", "audio": "jumatate.mp3"},
+    {"ro": "Un sfert", "ru": "Четверть", "transcription": "[ун сферт]", "audio": "un_sfert.mp3"},
+    {"ro": "Fără", "ru": "Без", "transcription": "[ˈфэрэ]", "audio": "fara.mp3"},
+    {"ro": "Cât este ora?", "ru": "Сколько сейчас времени?", "transcription": "[кыт ˈесте ˈора]", "audio": "cat_este_ora.mp3"},
+    {"ro": "Ce oră este?", "ru": "Который час?", "transcription": "[че ˈорэ ˈесте]", "audio": "ce_ora_este.mp3"},
+    {"ro": "Data nașterii", "ru": "Дата рождения", "transcription": "[ˈдата нэштеˈрий]", "audio": "data_nasterii.mp3"}
+  ],
+  "dialogs": [
+    [
+      {"ro": "Cât este ora? Cât e ora? Ce oră este?", "ru": "Сколько сейчас времени?", "transcription": "[кыт ˈесте ˈора? кыт е ˈора? че ˈорэ ˈесте?]", "audio": "cat_este_ora_dialog.mp3"}
+    ],
+    [
+      {"ro": "Bună ziua!", "ru": "Добрый день!", "transcription": "[ˈбунэ ˈзиуа]", "audio": "buna_ziua_dialog.mp3"},
+      {"ro": "Bună ziua!", "ru": "Здравствуйте!", "transcription": "[ˈбунэ ˈзиуа]", "audio": "buna_ziua_response.mp3"},
+      {"ro": "Cu ce vă pot ajuta?", "ru": "Чем могу вам помочь?", "transcription": "[ку че вэ пот ажуˈта]", "audio": "cu_ce_va_pot_ajuta.mp3"}
+    ],
+    [
+      {"ro": "Eu am programare la domnul consul.", "ru": "Мне назначен прием у консула.", "transcription": "[еу ам програˈмаре ла ˈдомнул ˈконсул]", "audio": "eu_am_programare_consul.mp3"},
+      {"ro": "La ce oră aveți programare?", "ru": "На который час Вам назначен прием?", "transcription": "[ла че ˈорэ авеˈць програˈмаре]", "audio": "la_ce_ora_aveti_programare.mp3"},
+      {"ro": "Scuzați, eu nu știu.", "ru": "Извините, я не знаю.", "transcription": "[скуˈзаць, еу ну штиу]", "audio": "scuzati_eu_nu_stiu.mp3"}
+    ],
+    [
+      {"ro": "O să verificăm.", "ru": "Давайте проверим.", "transcription": "[о сэ верифиˈкэм]", "audio": "o_sa_verificam.mp3"},
+      {"ro": "Voi fi mulțumit.", "ru": "Буду вам благодарен.", "transcription": "[вой фи мульцуˈмит]", "audio": "voi_fi_multumit.mp3"},
+      {"ro": "Care este numele dvs?", "ru": "Как Вас зовут?", "transcription": "[ˈкаре ˈесте ˈнумеле двс]", "audio": "care_este_numele_dvs.mp3"}
+    ],
+    [
+      {"ro": "Eu sunt Stanislav Svarichevsky", "ru": "Мое имя Станислав Сваричевский", "transcription": "[еу сунт ˈстанислав сваричевˈский]", "audio": "eu_sunt_stanislav_svarichevsky.mp3"},
+      {"ro": "Aveți programare la ora 3:30.", "ru": "Вам назначено на половину третьего.", "transcription": "[авеˈць програˈмаре ла ˈора трей тричеˈзечь]", "audio": "aveti_programare_ora_330.mp3"},
+      {"ro": "La ora trei și treizeci de minute?", "ru": "На половину третьего?", "transcription": "[ла ˈора трей шь трейˈзечь де миˈнуте]", "audio": "la_ora_trei_si_treizeci.mp3"}
+    ],
+    [
+      {"ro": "Da, biroul douăzeci, vă rog.", "ru": "Да, кабинет 20, пожалуйста", "transcription": "[да, биˈреул доуэˈзечь, вэ рог]", "audio": "da_biroul_douazeci.mp3"},
+      {"ro": "Cum să găsesc biroul douăzeci?", "ru": "Как найти 20й кабинет?", "transcription": "[кум сэ гэˈсеск биˈреул доуэˈзечь]", "audio": "cum_sa_gasesc_biroul_douazeci.mp3"},
+      {"ro": "La etajul doi.", "ru": "На втором этаже", "transcription": "[ла етаˈжул дой]", "audio": "la_etajul_doi.mp3"}
+    ],
+    [
+      {"ro": "Mulțumesc!", "ru": "Спасибо!", "transcription": "[мульцуˈмеск]", "audio": "multumesc_dialog.mp3"},
+      {"ro": "Poftim, Mergeți în biroul douăzeci.", "ru": "Пожалуйста, проходите в 20 кабинет.", "transcription": "[ˈпофтим, мерˈжець ын биˈреул доуэˈзечь]", "audio": "poftim_mergeti_biroul_douazeci.mp3"},
+      {"ro": "La revedere.", "ru": "До свидания.", "transcription": "[ла реведеˈре]", "audio": "la_revedere_dialog.mp3"}
+    ],
+    [
+      {"ro": "La revedere.", "ru": "До свидания.", "transcription": "[ла реведеˈре]", "audio": "la_revedere_response.mp3"}
+    ],
+    [
+      {"ro": "Repetați, vă rog mai lent/mai încet", "ru": "Повторите, пожалуйста, помедленнее!", "transcription": "[репеˈтаць, вэ рог май лент/май ынˈчет]", "audio": "repetati_va_rog_mai_lent.mp3"}
+    ],
+    [
+      {"ro": "Scuzați, am emoții, repetați, vă rog mai lent", "ru": "Извините я волнуюсь, пожалуйста, помедленнее!", "transcription": "[скуˈзаць, ам емоˈцийˇ репеˈтаць, вэ рог май лент]", "audio": "scuzati_am_emotii.mp3"}
+    ],
+    [
+      {"ro": "Data nașterii a fratelui", "ru": "Дата рождения брата", "transcription": "[ˈдата нэштеˈрий а ˈфрателуй]", "audio": "data_nasterii_fratelui.mp3"},
+      {"ro": "Data nașterii a fiicei", "ru": "Дата рождения дочери", "transcription": "[ˈдата нэштеˈрий а ˈфийчей]", "audio": "data_nasterii_fiicei.mp3"},
+      {"ro": "Data nașterii a soției", "ru": "Дата рождения жены", "transcription": "[ˈдата нэштеˈрий а ˈсоцией]", "audio": "data_nasterii_sotiei.mp3"}
+    ],
+    [
+      {"ro": "Data nașterii a mamei", "ru": "Дата рождения мамы", "transcription": "[ˈдата нэштеˈрий а ˈмамей]", "audio": "data_nasterii_mamei.mp3"},
+      {"ro": "Data nașterii a tatălui", "ru": "Дата рождения папы", "transcription": "[ˈдата нэштеˈрий а таˈтэлуй]", "audio": "data_nasterii_tatalui.mp3"}
+    ]
+  ]
+}
