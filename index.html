@@ -306,6 +306,11 @@
         <button class="btn btn-primary" onclick="showTrainingMenu()" style="margin: 10px;">Выбор тренировки</button>
         <button class="btn btn-back" onclick="showLessonMenu()">Выбор урока</button>
       </div>
+      <div class="lesson-controls">
+        <button id="prev-card-btn" class="btn btn-secondary" style="display: none;">
+          ← Предыдущая карточка
+        </button>
+      </div>
     </div>
   </div>
   <script>
@@ -553,6 +558,14 @@
         if (e.target.classList.contains('audio-btn')) return;
         card.classList.toggle('flipped');
       });
+      
+      // Показываем кнопку "Предыдущая карточка", если это не первая карточка
+      const prevCardBtn = document.getElementById('prev-card-btn');
+      prevCardBtn.style.display = (current > 0) ? 'inline-block' : 'none';
+      prevCardBtn.onclick = function() {
+        current = Math.max(0, current - 1);
+        showCard();
+      };
     }
 
     function playAudio(filename) {
