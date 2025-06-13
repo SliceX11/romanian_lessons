@@ -209,7 +209,60 @@
       border-radius: 15px;
       backdrop-filter: blur(10px);
     }
-    
+
+    /* Стили для режима аудирования */
+    .listening-mode-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+      padding: 15px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+    }
+
+    .listening-mode-container label {
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .listening-mode-container input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      accent-color: #667eea;
+      cursor: pointer;
+    }
+
+    /* Скрытие текста в режиме аудирования */
+    .listening-mode .card-front .romanian-word,
+    .listening-mode .card-front .transcription {
+      display: none !important;
+    }
+
+    .listening-mode .card-back .transcription {
+      display: none !important;
+    }
+
+    .listening-mode .card-face {
+      justify-content: center;
+    }
+
+    .listening-mode .audio-btn {
+      font-size: 1.2rem;
+      padding: 15px 25px;
+      margin: 20px 0;
+    }
+
+    .listening-mode .hint {
+      margin-top: 10px;
+    }
+
     h2 {
       color: white;
       margin-bottom: 20px;
@@ -300,6 +353,15 @@
         <h2 id="training-title">Урок 1: Слова</h2>
         <button class="btn btn-back" onclick="showTrainingMenu()">← Назад</button>
       </div>
+      
+      <!-- Чекбокс режима аудирования -->
+      <div class="listening-mode-container">
+        <label for="listening-mode-checkbox">
+          <input type="checkbox" id="listening-mode-checkbox" onchange="toggleListeningMode()">
+          🎧 Режим аудирования
+        </label>
+      </div>
+      
       <div id="progress" class="progress"></div>
       <div id="card-area"></div>
       <div id="finished" class="finished" style="display:none;">
@@ -324,6 +386,22 @@
     let learned = [];
     let current = 0;
     let timeQuestions = 20; // Начальное количество вопросов времени
+    let listeningMode = false; // Режим аудирования
+
+    // Функция переключения режима аудирования
+    function toggleListeningMode() {
+      const checkbox = document.getElementById('listening-mode-checkbox');
+      listeningMode = checkbox.checked;
+      
+      const cardContainer = document.querySelector('.card-container');
+      if (cardContainer) {
+        if (listeningMode) {
+          cardContainer.classList.add('listening-mode');
+        } else {
+          cardContainer.classList.remove('listening-mode');
+        }
+      }
+    }
 
     // Навигация
     function showLessonMenu() {
@@ -394,6 +472,11 @@
       learned = [];
       current = 0;
       document.getElementById('finished').style.display = 'none';
+      
+      // Сбрасываем режим аудирования при начале новой тренировки
+      document.getElementById('listening-mode-checkbox').checked = false;
+      listeningMode = false;
+      
       showTrainingArea();
       showCard();
     }
@@ -531,20 +614,24 @@
       const frontHint = currentTrainingType === 'time' ? 'Как это сказать по-румынски?' : 'Нажмите, чтобы увидеть перевод';
       const backHint = currentTrainingType === 'time' ? 'Нажмите, чтобы вернуться' : 'Нажмите, чтобы вернуться';
       
+      // Специальные подсказки для режима аудирования
+      const listeningFrontHint = 'Прослушайте и попробуйте понять значение';
+      const listeningBackHint = 'Нажмите, чтобы вернуться к аудио';
+      
       cardArea.innerHTML = `
-        <div class="card-container">
+        <div class="card-container ${listeningMode ? 'listening-mode' : ''}">
           <div class="card" id="card">
             <div class="card-face card-front">
               <div class="romanian-word">${frontText}</div>
               ${currentTrainingType === 'time' ? '' : `<div class="transcription">${cardData.transcription}</div>`}
               ${cardData.audio ? `<button class="audio-btn" onclick="playAudio('${cardData.audio}');event.stopPropagation();">🔊 Прослушать</button>` : ''}
-              <div class="hint">${frontHint}</div>
+              <div class="hint">${listeningMode ? listeningFrontHint : frontHint}</div>
             </div>
             <div class="card-face card-back">
               <div class="russian-word">${backText}</div>
               <div class="transcription">${cardData.transcription}</div>
               ${cardData.audio ? `<button class="audio-btn" onclick="playAudio('${cardData.audio}');event.stopPropagation();">🔊 Прослушать</button>` : ''}
-              <div class="hint">${backHint}</div>
+              <div class="hint">${listeningMode ? listeningBackHint : backHint}</div>
             </div>
           </div>
         </div>
