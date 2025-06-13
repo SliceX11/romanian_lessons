@@ -1,0 +1,36 @@
+/* ...existing code... */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+        padding: 10px;
+    }
+    
+    .lesson-container {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .btn {
+        font-size: 16px;
+        padding: 12px 20px;
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    .card {
+        font-size: 20px;
+        padding: 20px;
+    }
+    
+    .lesson-controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .lesson-controls button {
+        width: 100%;
+    }
+}
+
+/* ...existing code... */
