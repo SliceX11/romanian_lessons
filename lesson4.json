@@ -1,0 +1,104 @@
+{
+  "words": [
+    {"ro": "Luni", "ru": "Понедельник", "transcription": "[ˈлуни]", "audio": "luni.mp3"},
+    {"ro": "Marți", "ru": "Вторник", "transcription": "[ˈмарц]", "audio": "marti.mp3"},
+    {"ro": "Miercuri", "ru": "Среда", "transcription": "[ˈмьеркурь]", "audio": "miercuri.mp3"},
+    {"ro": "Joi", "ru": "Четверг", "transcription": "[жой]", "audio": "joi.mp3"},
+    {"ro": "Vineri", "ru": "Пятница", "transcription": "[ˈвинери]", "audio": "vineri.mp3"},
+    {"ro": "Sâmbătă", "ru": "Суббота", "transcription": "[ˈсымбэтэ]", "audio": "sambata.mp3"},
+    {"ro": "Duminică", "ru": "Воскресенье", "transcription": "[дуˈминикэ]", "audio": "duminica.mp3"},
+    {"ro": "Zi / ziua", "ru": "День", "transcription": "[зи / ˈзиуа]", "audio": "zi_ziua.mp3"},
+    {"ro": "Săptămână", "ru": "Неделя", "transcription": "[сэптэˈмынэ]", "audio": "saptamana.mp3"},
+    {"ro": "Lună", "ru": "Месяц", "transcription": "[ˈлунэ]", "audio": "luna.mp3"},
+    {"ro": "An / anul", "ru": "Год", "transcription": "[ан / ˈанул]", "audio": "an_anul.mp3"},
+    {"ro": "Alaltăieri a fost", "ru": "Позавчера был", "transcription": "[алалтэˈйерь а фост]", "audio": "alaltaieri_a_fost.mp3"},
+    {"ro": "Ieri a fost", "ru": "Вчера был", "transcription": "[ˈйерь а фост]", "audio": "ieri_a_fost.mp3"},
+    {"ro": "Azi / Astăzi e (este)", "ru": "Сегодня", "transcription": "[ˈази / ˈастэзь е (ˈесте)]", "audio": "azi_astazi_e_este.mp3"},
+    {"ro": "Mâine va fi", "ru": "Завтра будет", "transcription": "[ˈмэйнэ ва фи]", "audio": "maine_va_fi.mp3"},
+    {"ro": "Poimâine va fi", "ru": "Послезавтра будет", "transcription": "[пойˈмэйнэ ва фи]", "audio": "poimaine_va_fi.mp3"},
+    {"ro": "Ora douăsprezece dimineața", "ru": "Двенадцать утра", "transcription": "[ˈора доуэспрэˈзече димиˈняца]", "audio": "ora_douasprezece_dimineata.mp3"},
+    {"ro": "Ora unu după-amiaza", "ru": "Час после полудня", "transcription": "[ˈора ˈуну дупэ амˈйаза]", "audio": "ora_unu_dupa_amiaza.mp3"},
+    {"ro": "Ora șase seara", "ru": "Шесть вечера", "transcription": "[ˈора ˈшасе ˈсеара]", "audio": "ora_sase_seara.mp3"},
+    {"ro": "Ora douăsprezece noaptea", "ru": "Двенадцать ночи", "transcription": "[ˈора доуэспрэˈзече ˈноаптя]", "audio": "ora_douasprezece_noaptea.mp3"}
+  ],
+  "dialogs": [
+    [
+      {"ro": "Ce dată este astăzi?", "ru": "Какая сегодня дата?", "transcription": "[че ˈдате ˈесте ˈастэзь]", "audio": "ce_data_este_astazi.mp3"}
+    ],
+    [
+      {"ro": "Astăzi este doisprezece februarie.", "ru": "Сегодня двенадцатое февраля.", "transcription": "[ˈастэзь ˈесте доуэспрэˈзече февруаˈрие]", "audio": "astazi_este_doisprezece_februarie.mp3"}
+    ],
+    [
+      {"ro": "Ce zi de săptămână este?", "ru": "Какой сегодня день недели?", "transcription": "[че зи де сэптэˈмынэ ˈесте]", "audio": "ce_zi_de_saptamana_este.mp3"}
+    ],
+    [
+      {"ro": "Este luni.", "ru": "Сегодня понедельник.", "transcription": "[ˈесте ˈлуни]", "audio": "este_luni.mp3"}
+    ],
+    [
+      {"ro": "Ce lună este?", "ru": "Какой сейчас месяц?", "transcription": "[че ˈлунэ ˈесте]", "audio": "ce_luna_este.mp3"}
+    ],
+    [
+      {"ro": "În ce lună suntem?", "ru": "В каком месяце мы?", "transcription": "[ын че ˈлунэ сунˈтем]", "audio": "in_ce_luna_suntem.mp3"}
+    ],
+    [
+      {"ro": "Este luna februarie", "ru": "Сейчас февраль", "transcription": "[ˈесте ˈлуна февруаˈрие]", "audio": "este_luna_februarie.mp3"}
+    ],
+    [
+      {"ro": "Ce lună după număr este luna ianuarie?", "ru": "Какой по счету месяц январь?", "transcription": "[че ˈлунэ ˈдупэ ˈнумэр ˈесте ˈлуна януаˈриэ]", "audio": "ce_luna_dupa_numar_este_luna_ianuarie.mp3"}
+    ],
+    [
+      {"ro": "A câta lună este luna ianuarie?", "ru": "Какой по счету месяц январь?", "transcription": "[а ˈкытэ ˈлунэ ˈесте ˈлуна януаˈриэ]", "audio": "a_cata_luna_este_luna_ianuarie.mp3"}
+    ],
+    [
+      {"ro": "Prima lună", "ru": "Первый месяц", "transcription": "[ˈприма ˈлунэ]", "audio": "prima_luna.mp3"}
+    ],
+    [
+      {"ro": "Când este ziua dvs. de naștere?", "ru": "Когда ваш день рождения?", "transcription": "[кынд ˈесте ˈзиуа дэвэсе де ˈнаштере]", "audio": "cand_este_ziua_dvs_de_nastere.mp3"}
+    ],
+    [
+      {"ro": "Când v-ați născut?", "ru": "Когда вы родились?", "transcription": "[кынд вац нэˈскут]", "audio": "cand_v_ati_nascut.mp3"}
+    ],
+    [
+      {"ro": "1 decembrie anul o mie nouă sute șaptezeci și cinci.", "ru": "1 декабря 1975 года.", "transcription": "[уну деˈчембриэ ˈанул о ˈмие ˈноуэ ˈсуте шаптэˈзечь ши чинчь]", "audio": "unu_decembrie_1975.mp3"}
+    ],
+    [
+      {"ro": "Locul nașterii? Unde v-ați născut?", "ru": "Место рождения?", "transcription": "[ˈлокул ˈнаштерий? ˈунде вац нэˈскут]", "audio": "locul_nasterii.mp3"}
+    ],
+    [
+      {"ro": "Rusia orașul Moscova", "ru": "Россия, город Москва", "transcription": "[ˈрусйа оˈрашул Москова]", "audio": "rusia_orasul_moscova.mp3"}
+    ],
+    [
+      {"ro": "Câte zile din săptămână dvs. lucrați?", "ru": "Сколько дней в неделю вы работаете?", "transcription": "[кыˈте зиле дин сэптэˈмынэ дэˈвесэ луˈкраць]", "audio": "cate_zile_din_saptamana_lucrati.mp3"}
+    ],
+    [
+      {"ro": "Lucrez 5 zile pe săptămână.", "ru": "Работаю 5 дней в неделю.", "transcription": "[луˈкрез чинчь зиле пе сэптэˈмынэ]", "audio": "lucrez_5_zile_pe_saptamana.mp3"}
+    ],
+    [
+      {"ro": "Ce oră este?", "ru": "Который час?", "transcription": "[че ˈорэ ˈесте]", "audio": "ce_ora_este_l4.mp3"}
+    ],
+    [
+      {"ro": "Este ora cincisprezece fără două minute.", "ru": "Сейчас 15 часов без двух минут.", "transcription": "[ˈесте ˈора чинчиспреˈзече ˈфэрэ ˈдоуэ миˈнуте]", "audio": "este_ora_15_fara_2.mp3"}
+    ],
+    [
+      {"ro": "Este ora douăzeci și zece minute.", "ru": "Сейчас 20 часов десять минут.", "transcription": "[ˈесте ˈора доуэˈзечь шь ˈзече миˈнуте]", "audio": "este_ora_20_si_10.mp3"}
+    ],
+    [
+      {"ro": "La ce oră aveți programare?", "ru": "На который час вы записаны?", "transcription": "[ла че ˈорэ авеˈць програˈмаре]", "audio": "la_ce_ora_aveti_programare_l4.mp3"}
+    ],
+    [
+      {"ro": "La ora zece", "ru": "На десять часов", "transcription": "[ла ˈора ˈзече]", "audio": "la_ora_zece.mp3"}
+    ],
+    [
+      {"ro": "În ce zi aveți programare?", "ru": "На какой день вы записаны?", "transcription": "[ын че зи авеˈць програˈмаре]", "audio": "in_ce_zi_aveti_programare.mp3"}
+    ],
+    [
+      {"ro": "Pe joi.", "ru": "На четверг.", "transcription": "[пе жой]", "audio": "pe_joi.mp3"}
+    ],
+    [
+      {"ro": "La ce dată aveți programare?", "ru": "На какую дату вы записаны?", "transcription": "[ла че ˈдата авеˈць програˈмаре]", "audio": "la_ce_data_aveti_programare.mp3"}
+    ],
+    [
+      {"ro": "Pe șaisprezece august.", "ru": "На шестнадцатое августа.", "transcription": "[пе шайспрэˈзече аугуст]", "audio": "pe_saisprezece_august.mp3"}
+    ]
+  ]
+}
