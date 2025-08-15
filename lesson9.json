@@ -1,0 +1,148 @@
+{
+  "dialogs": [
+    [
+      {"ro": "Bună ziua, cum vă numiți?", "ru": "Добрый день, как вас зовут?", "transcription": "[ˈбунэ ˈзиуа, кум вэ нуˈмиць]", "audio": "buna_ziua_cum_va_numiti_q.mp3"},
+      {"ro": "Mă numesc Stanislav Svarichevsky.", "ru": "Меня зовут Станислав Сваричевский.", "transcription": "[мэ нуˈмеск станиˈслав сваричевˈски]", "audio": "ma_numesc_stanislav_svarichevsky_a.mp3"}
+    ],
+    [
+      {"ro": "Care este prenumele Dvs?", "ru": "Как ваше имя?", "transcription": "[ˈкаре ˈесте преˈнумеле двс]", "audio": "care_este_prenumele_q.mp3"},
+      {"ro": "Prenumele meu este Stanislav.", "ru": "Моё имя Станислав.", "transcription": "[преˈнумеле меу ˈесте станиˈслав]", "audio": "prenumele_meu_este_stanislav_a.mp3"}
+    ],
+    [
+      {"ro": "Care este numele Dvs?", "ru": "Какая у вас фамилия?", "transcription": "[ˈкаре ˈесте ˈнумеле двс]", "audio": "care_este_numele_q.mp3"},
+      {"ro": "Numele meu este Svarichevsky.", "ru": "Моя фамилия Сваричевский.", "transcription": "[ˈнумеле меу ˈесте сваричевˈски]", "audio": "numele_meu_este_svarichevsky_a.mp3"}
+    ],
+    [
+      {"ro": "De unde sunteți?", "ru": "Откуда вы?", "transcription": "[де ˈунде сунˈтэц]", "audio": "de_unde_sunteti_q.mp3"},
+      {"ro": "Sunt din Tbilisi, Georgia.", "ru": "Я из Тбилиси, Грузия.", "transcription": "[сунт дин тбиˈлиси, геˈорджиа]", "audio": "sunt_din_tbilisi_a.mp3"}
+    ],
+    [
+      {"ro": "Care este domiciliul Dvs stabil?", "ru": "Каково ваше постоянное место жительства?", "transcription": "[ˈкаре ˈесте домиˈчийул двс стаˈбил]", "audio": "care_este_domiciliul_stabil_q.mp3"},
+      {"ro": "Domiciliul meu stabil este în Tbilisi.", "ru": "Моё постоянное место жительства — в Тбилиси.", "transcription": "[домиˈчийул меу стаˈбил ˈесте ын тбиˈлиси]", "audio": "domiciliul_meu_stabil_a.mp3"}
+    ],
+    [
+      {"ro": "Cum ați ajuns la consulat?", "ru": "Как вы добрались до консульства?", "transcription": "[кум аць аˈжунс ла консуˈлат]", "audio": "cum_ati_ajuns_la_consulat_q.mp3"},
+      {"ro": "Am venit cu taxiul.", "ru": "Я приехал на такси.", "transcription": "[ам веˈнит ку такˈсиул]", "audio": "am_venit_cu_taxiul_a.mp3"}
+    ],
+    [
+      {"ro": "Cât timp a durat drumul spre consulat?", "ru": "Сколько заняла дорога до консульства?", "transcription": "[кыт тимп а дуˈрат ˈдрумул спре консуˈлат]", "audio": "cat_timp_a_durat_drumul_q.mp3"},
+      {"ro": "A durat aproximativ treizeci de minute.", "ru": "Заняло примерно тридцать минут.", "transcription": "[а дуˈрат апроксимаˈтив трейˈзечь де миˈнуте]", "audio": "a_durat_30_min_a.mp3"}
+    ],
+    [
+      {"ro": "Cât timp ați așteptat la intrare?", "ru": "Сколько вы ждали у входа?", "transcription": "[кыт тимп аць аштепˈтат ла инˈтраре]", "audio": "cat_timp_ati_asteptat_la_intrare_q.mp3"},
+      {"ro": "Am așteptat aproximativ zece minute.", "ru": "Ждал примерно десять минут.", "transcription": "[ам аштепˈтат апроксимаˈтив ˈзече миˈнуте]", "audio": "am_asteptat_10_min_a.mp3"}
+    ],
+    [
+      {"ro": "Unde v-ați cazat?", "ru": "Где вы остановились?", "transcription": "[ˈунде ваць каˈзат]", "audio": "unde_vati_cazat_q.mp3"},
+      {"ro": "M-am cazat la un hotel aproape de consulat.", "ru": "Я остановился в отеле рядом с консульством.", "transcription": "[м ам каˈзат ла ун хоˈтел апраˈопе де консуˈлат]", "audio": "m_am_cazat_la_un_hotel_a.mp3"}
+    ],
+    [
+      {"ro": "Aveți toate documentele necesare?", "ru": "У вас есть все необходимые документы?", "transcription": "[авець туˈате докумеˈнтеле нечесаˈре]", "audio": "aveti_toate_documentele_q.mp3"},
+      {"ro": "Da, am toate documentele necesare.", "ru": "Да, у меня есть все необходимые документы.", "transcription": "[да, ам туˈате докумеˈнтеле нечесаˈре]", "audio": "da_am_toate_documentele_a.mp3"}
+    ],
+    [
+      {"ro": "Care este numărul dosarului Dvs?", "ru": "Какой номер вашего дела?", "transcription": "[ˈкаре ˈесте ˈнумэрыл досаˈрулуй двс]", "audio": "care_este_numarul_dosarului_q.mp3"},
+      {"ro": "Numărul dosarului este 123456.", "ru": "Номер дела 123456.", "transcription": "[ˈнумэрыл досаˈрулуй ˈесте уна сютэ дойспреˈзече чимчиˈспреˈзече шасе]", "audio": "numarul_dosarului_123456_a.mp3"}
+    ],
+    [
+      {"ro": "În ce an ați depus dosarul?", "ru": "В каком году вы подали дело?", "transcription": "[ын че ан аць деˈпус досаˈрул]", "audio": "in_ce_an_ati_depus_q.mp3"},
+      {"ro": "Am depus dosarul în anul 2023.", "ru": "Я подал дело в 2023 году.", "transcription": "[ам деˈпус досаˈрул ын ˈанул доуэ мий дойˈшиптреˈй]", "audio": "am_depus_in_2023_a.mp3"}
+    ],
+    [
+      {"ro": "Ați depus dosarul singur?", "ru": "Вы подавали дело самостоятельно?", "transcription": "[аць деˈпус досаˈрул синˈгур]", "audio": "ati_depus_singur_q.mp3"},
+      {"ro": "Da, am depus singur.", "ru": "Да, подавал сам.", "transcription": "[да, ам деˈпус синˈгур]", "audio": "da_am_depus_singur_a.mp3"}
+    ],
+    [
+      {"ro": "Cine v-a ajutat să depuneți cererea?", "ru": "Кто вам помог подать заявление?", "transcription": "[ˈчине ва ажуˈтат сэ деˈпунэць чеˈреря]", "audio": "cine_va_ajutat_sa_depuneti_q.mp3"},
+      {"ro": "M-a ajutat un avocat.", "ru": "Мне помог адвокат.", "transcription": "[ма ажуˈтат ун аваˈкат]", "audio": "m_a_ajutat_un_avocat_a.mp3"}
+    ],
+    [
+      {"ro": "Cât timp ați așteptat publicarea în lista de ordine?", "ru": "Сколько вы ждали публикации в списке очереди?", "transcription": "[кыт тимп аць аштепˈтат публикаˈря ын ˈлиста де ˈордине]", "audio": "cat_timp_ati_asteptat_publicarea_q.mp3"},
+      {"ro": "Am așteptat aproximativ șase luni.", "ru": "Я ждал примерно шесть месяцев.", "transcription": "[ам аштепˈтат апроксимаˈтив ˈшасе лунь]", "audio": "am_asteptat_6_luni_a.mp3"}
+    ],
+    [
+      {"ro": "Cât timp ați așteptat soluționarea dosarului?", "ru": "Сколько вы ждали решения по делу?", "transcription": "[кыт тимп аць аштепˈтат солуцьйоˈнаря досаˈрулуй]", "audio": "cat_timp_ati_asteptat_solutionarea_q.mp3"},
+      {"ro": "A durat aproape un an.", "ru": "Это заняло почти год.", "transcription": "[а дуˈрат апраˈопе ун ан]", "audio": "a_durat_aproape_un_an_a.mp3"}
+    ],
+    [
+      {"ro": "Cum ați aflat că aveți ordin?", "ru": "Как вы узнали, что у вас есть приказ (орден)?", "transcription": "[кум аць афˈлат кэ авець ˈордин]", "audio": "cum_ati_aflat_ca_aveti_ordin_q.mp3"},
+      {"ro": "Am primit notificare pe e-mail.", "ru": "Я получил уведомление по электронной почте.", "transcription": "[ам приˈмит нотифиˈкаре пе иˈмейл]", "audio": "am_primit_notificare_email_a.mp3"}
+    ],
+    [
+      {"ro": "Copiii sunt înscriși în dosarul Dvs?", "ru": "Дети включены в ваше дело?", "transcription": "[коˈпий сунт ынскˈриш ын досаˈрул двс]", "audio": "copiii_sunt_inscrisi_q.mp3"},
+      {"ro": "Da, copiii sunt înscriși.", "ru": "Да, дети включены.", "transcription": "[да, коˈпий сунт ынскˈриш]", "audio": "da_copiii_sunt_inscrisi_a.mp3"}
+    ],
+    [
+      {"ro": "Unde este scrisoarea, pașaportul, buletinul?", "ru": "Где письмо, паспорт, удостоверение личности?", "transcription": "[ˈунде ˈесте скрисоˈаря, паʃаˈпортул, булеˈтинул]", "audio": "unde_este_scrisoarea_pasaportul_buletinul_q.mp3"},
+      {"ro": "Sunt în mapa mea, aici.", "ru": "Они в моей папке, здесь.", "transcription": "[сонт ын ˈмапа меа, аˈич]", "audio": "sunt_in_mapa_mea_a.mp3"}
+    ],
+    [
+      {"ro": "Sunteți căsătorit?", "ru": "Вы женаты?", "transcription": "[сунˈтэц кэсэтоˈрит]", "audio": "sunteti_casatorit_q.mp3"},
+      {"ro": "Da, sunt căsătorit.", "ru": "Да, женат.", "transcription": "[да, сунт кэсэтоˈрит]", "audio": "da_sunt_casatorit_a.mp3"}
+    ],
+    [
+      {"ro": "Unde v-ați născut?", "ru": "Где вы родились?", "transcription": "[ˈунде ваць нэˈскут]", "audio": "unde_vati_nascut_q.mp3"},
+      {"ro": "M-am născut în Sankt Petersburg.", "ru": "Я родился в Санкт-Петербурге.", "transcription": "[м ам нэˈскут ын санк(т) ˈпетерсбург]", "audio": "m_am_nascut_in_spb_a.mp3"}
+    ],
+    [
+      {"ro": "Când v-ați născut?", "ru": "Когда вы родились?", "transcription": "[кынд ваць нэˈскут]", "audio": "cand_vati_nascut_q.mp3"},
+      {"ro": "M-am născut la 10 mai 1985.", "ru": "Я родился 10 мая 1985 года.", "transcription": "[м ам нэˈскут ла зече май уна миˈе осуте ошˈтипатрузечи чинч]", "audio": "m_am_nascut_10_mai_1985_a.mp3"}
+    ],
+    [
+      {"ro": "Câți ani aveți? Ce vârstă aveți?", "ru": "Сколько вам лет? Какой у вас возраст?", "transcription": "[кыць ань авець? че ˈвырстэ авець?]", "audio": "cati_ani_aveti_q.mp3"},
+      {"ro": "Am treizeci și nouă de ani.", "ru": "Мне тридцать девять лет.", "transcription": "[ам трейˈзечь ши ˈноуэ де ань]", "audio": "am_39_de_ani_a.mp3"}
+    ],
+    [
+      {"ro": "Cât e ora? Ce oră e?", "ru": "Который час?", "transcription": "[кыт е ˈора? че ˈорэ е?]", "audio": "cat_e_ora_q.mp3"},
+      {"ro": "Este ora două și jumătate.", "ru": "Сейчас половина третьего.", "transcription": "[ˈесте ˈора ˈдоуэ ши жумаˈтате]", "audio": "este_ora_doua_si_jumatate_a.mp3"}
+    ],
+    [
+      {"ro": "Ce zi este azi?", "ru": "Какой сегодня день?", "transcription": "[че зи ˈесте азь]", "audio": "ce_zi_este_azi_q.mp3"},
+      {"ro": "Astăzi este luni.", "ru": "Сегодня понедельник.", "transcription": "[асˈтэзи ˈесте лунь]", "audio": "astazi_este_luni_a.mp3"}
+    ],
+    [
+      {"ro": "Ce zi a fost ieri?", "ru": "Какой день был вчера?", "transcription": "[че зи а фост ˈйерь]", "audio": "ce_zi_a_fost_ieri_q.mp3"},
+      {"ro": "Ieri a fost duminică.", "ru": "Вчера было воскресенье.", "transcription": "[ˈйерь а фост думиˈника]", "audio": "ieri_a_fost_duminica_a.mp3"}
+    ],
+    [
+      {"ro": "Ce zi va fi mâine?", "ru": "Какой день будет завтра?", "transcription": "[че зи ва фи ˈмыйнэ]", "audio": "ce_zi_va_fi_maine_q.mp3"},
+      {"ro": "Mâine va fi marți.", "ru": "Завтра будет вторник.", "transcription": "[ˈмыйнэ ва фи марць]", "audio": "maine_va_fi_marti_a.mp3"}
+    ],
+    [
+      {"ro": "Numiți zilele săptămânii.", "ru": "Назовите дни недели.", "transcription": "[нуˈмиць зилеле сэптэˈмыний]", "audio": "numiti_zilele_saptamanii_q.mp3"},
+      {"ro": "Luni, marți, miercuri, joi, vineri, sâmbătă, duminică.", "ru": "Понедельник, вторник, среда, четверг, пятница, суббота, воскресенье.", "transcription": "[лунь, марць, мьеркурь, жой, винерь, сымбэта, думиника]", "audio": "zilele_saptamanii_list_a.mp3"}
+    ],
+    [
+      {"ro": "Ce dată este azi?", "ru": "Какое сегодня число?", "transcription": "[че ˈдата ˈесте азь]", "audio": "ce_data_este_azi_q.mp3"},
+      {"ro": "Astăzi este 15 august.", "ru": "Сегодня 15 августа.", "transcription": "[асˈтэзи ˈесте ˈчинзече ауˈгуст]", "audio": "astazi_este_15_august_a.mp3"}
+    ],
+    [
+      {"ro": "În ce lună suntem?", "ru": "Какой сейчас месяц?", "transcription": "[ын че ˈлунэ сунˈтэм]", "audio": "in_ce_luna_suntem_q.mp3"},
+      {"ro": "Suntem în luna august.", "ru": "Сейчас месяц август.", "transcription": "[сунˈтэм ын ˈлуна ауˈгуст]", "audio": "suntem_in_august_a.mp3"}
+    ],
+    [
+      {"ro": "În a câta lună suntem?", "ru": "Какой по счёту сейчас месяц?", "transcription": "[ын а кыˈта ˈлунэ сунˈтэм]", "audio": "in_a_cata_luna_q.mp3"},
+      {"ro": "Suntem în a opta lună.", "ru": "Это восьмой месяц.", "transcription": "[сунˈтэм ын а ˈопта ˈлунэ]", "audio": "suntem_in_a_opta_luna_a.mp3"}
+    ],
+    [
+      {"ro": "Ce anotimp este?", "ru": "Какое сейчас время года?", "transcription": "[че аноˈтимп ˈесте]", "audio": "ce_anotimp_este_q.mp3"},
+      {"ro": "Este vară.", "ru": "Сейчас лето.", "transcription": "[ˈесте ˈвара]", "audio": "este_vara_a.mp3"}
+    ],
+    [
+      {"ro": "Numiți anotimpurile.", "ru": "Назовите времена года.", "transcription": "[нуˈмиць аноˈтимпуриле]", "audio": "numiti_anotimpurile_q.mp3"},
+      {"ro": "Primăvara, vara, toamna, iarna.", "ru": "Весна, лето, осень, зима.", "transcription": "[приˈмэвара, ˈвара, ˈтоамна, ˈярна]", "audio": "anotimpurile_list_a.mp3"}
+    ],
+    [
+      {"ro": "În ce anotimp v-ați născut?", "ru": "В какое время года вы родились?", "transcription": "[ын че аноˈтимп ваць нэˈскут]", "audio": "in_ce_anotimp_vati_nascut_q.mp3"},
+      {"ro": "M-am născut iarna.", "ru": "Я родился зимой.", "transcription": "[м ам нэˈскут ˈярна]", "audio": "m_am_nascut_iarna_a.mp3"}
+    ],
+    [
+      {"ro": "Ce anotimp vă place?", "ru": "Какое время года вам нравится?", "transcription": "[че аноˈтимп вэ ˈплаче]", "audio": "ce_anotimp_va_place_q.mp3"},
+      {"ro": "Îmi place toamna.", "ru": "Мне нравится осень.", "transcription": "[ымы ˈплаче ˈтоамна]", "audio": "imi_place_toamna_a.mp3"}
+    ],
+    [
+      {"ro": "Numărați de la 10 până la 20.", "ru": "Сосчитайте от 10 до 20.", "transcription": "[нумэˈраць де ла ˈзече пына ла доуэˈзечь]", "audio": "numarati_de_la_10_pana_la_20_q.mp3"},
+      {"ro": "Zece, unsprezece, doisprezece, treisprezece, paisprezece, cincisprezece, șaisprezece, șaptesprezece, optsprezece, nouăsprezece, douăzeci.", "ru": "Десять, одиннадцать, двенадцать, тринадцать, четырнадцать, пятнадцать, шестнадцать, семнадцать, восемнадцать, девятнадцать, двадцать.", "transcription": "[ˈзече, унспреˈзече, дойспреˈзече, трейспреˈзече, пайспреˈзече, чинчиспреˈзече, шайспреˈзече, шаптеспреˈзече, оптспреˈзече, ноуэспреˈзече, доуэˈзечь]", "audio": "count_10_to_20_a.mp3"}
+    ]
+  ]
+}
