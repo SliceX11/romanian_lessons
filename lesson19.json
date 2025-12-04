@@ -1,0 +1,139 @@
+{
+  "words": [
+    {"ro": "Alb / albă / albi / albe", "ru": "Белый / белая / белые (м) / белые (ж)", "transcription": "", "audio": "alb.mp3"},
+    {"ro": "Negru / neagră / negri / negre", "ru": "Черный / черная / черные (м) / черные (ж)", "transcription": "", "audio": "negru.mp3"},
+    {"ro": "Galben / galbenă / galbeni / galbene", "ru": "Желтый / желтая / желтые (м) / желтые (ж)", "transcription": "", "audio": "galben.mp3"},
+    {"ro": "Albastru / albastră / albaștri / albastre", "ru": "Синий / синяя / синие (м) / синие (ж)", "transcription": "", "audio": "albastru.mp3"},
+    {"ro": "Roșu / roșie / roșii", "ru": "Красный / красная / красные", "transcription": "", "audio": "rosu.mp3"},
+    {"ro": "Portocaliu / portocalie / portocalii", "ru": "Оранжевый / оранжевая / оранжевые", "transcription": "", "audio": "portocaliu.mp3"},
+    {"ro": "Verde / verzi", "ru": "Зеленый / зеленые", "transcription": "", "audio": "verde.mp3"},
+    {"ro": "Gri", "ru": "Серый", "transcription": "", "audio": "gri.mp3"},
+    {"ro": "Maro", "ru": "Коричневый", "transcription": "", "audio": "maro.mp3"},
+    {"ro": "Roz", "ru": "Розовый", "transcription": "", "audio": "roz.mp3"},
+    {"ro": "Mov", "ru": "Фиолетовый", "transcription": "", "audio": "mov.mp3"},
+    {"ro": "Turcuaz", "ru": "Бирюзовый", "transcription": "", "audio": "turcuaz.mp3"},
+    {"ro": "Bej", "ru": "Бежевый", "transcription": "", "audio": "bej.mp3"},
+    {"ro": "Statură / înălțime", "ru": "Рост", "transcription": "", "audio": "statura_inaltime.mp3"},
+    {"ro": "Înalt / înaltă", "ru": "Высокий / высокая", "transcription": "", "audio": "inalt.mp3"},
+    {"ro": "Scund / scundă", "ru": "Низкий / низкая", "transcription": "", "audio": "scund.mp3"},
+    {"ro": "Greutate", "ru": "Вес", "transcription": "", "audio": "greutate.mp3"},
+    {"ro": "Zvelt / zveltă", "ru": "Стройный / стройная", "transcription": "", "audio": "zvelt.mp3"},
+    {"ro": "Siluetă sportivă", "ru": "Спортивная фигура", "transcription": "", "audio": "silueta_sportiva.mp3"},
+    {"ro": "Ochi", "ru": "Глаза", "transcription": "", "audio": "ochi.mp3"},
+    {"ro": "Păr", "ru": "Волосы", "transcription": "", "audio": "par.mp3"},
+    {"ro": "Ochelari", "ru": "Очки", "transcription": "", "audio": "ochelari.mp3"},
+    {"ro": "Deget", "ru": "Палец", "transcription": "", "audio": "deget.mp3"},
+    {"ro": "Braț", "ru": "Рука (от плеча)", "transcription": "", "audio": "brat.mp3"},
+    {"ro": "Mână", "ru": "Рука (кисть)", "transcription": "", "audio": "mana.mp3"},
+    {"ro": "Barbă", "ru": "Борода", "transcription": "", "audio": "barba.mp3"},
+    {"ro": "Mustață", "ru": "Усы", "transcription": "", "audio": "mustata.mp3"},
+    {"ro": "Bărbat", "ru": "Мужчина", "transcription": "", "audio": "barbat.mp3"},
+    {"ro": "Înfățișare", "ru": "Внешность", "transcription": "", "audio": "infatisare.mp3"},
+    {"ro": "Plinuț / plinuță", "ru": "Полный / полная", "transcription": "", "audio": "plinut.mp3"},
+    {"ro": "Cercei", "ru": "Серьги", "transcription": "", "audio": "cercei.mp3"},
+    {"ro": "Inel", "ru": "Кольцо", "transcription": "", "audio": "inel.mp3"},
+    {"ro": "Brățară", "ru": "Браслет", "transcription": "", "audio": "bratara.mp3"},
+    {"ro": "Ceas", "ru": "Часы", "transcription": "", "audio": "ceas.mp3"},
+    {"ro": "Verighetă / inel de logodnă", "ru": "Обручальное кольцо", "transcription": "", "audio": "verigheta.mp3"},
+    {"ro": "Haine", "ru": "Одежда", "transcription": "", "audio": "haine.mp3"},
+    {"ro": "Cămașă", "ru": "Рубашка", "transcription": "", "audio": "camasa.mp3"},
+    {"ro": "Costum", "ru": "Костюм", "transcription": "", "audio": "costum.mp3"},
+    {"ro": "Pulover", "ru": "Свитер/Пуловер", "transcription": "", "audio": "pulover.mp3"},
+    {"ro": "Blugi", "ru": "Джинсы", "transcription": "", "audio": "blugi.mp3"},
+    {"ro": "Rochie", "ru": "Платье", "transcription": "", "audio": "rochie.mp3"},
+    {"ro": "Sacou", "ru": "Пиджак", "transcription": "", "audio": "sacou.mp3"},
+    {"ro": "Pantaloni", "ru": "Штаны/Брюки", "transcription": "", "audio": "pantaloni.mp3"},
+    {"ro": "Tricou", "ru": "Футболка", "transcription": "", "audio": "tricou.mp3"},
+    {"ro": "Bluză", "ru": "Блузка", "transcription": "", "audio": "bluza.mp3"},
+    {"ro": "Cravată", "ru": "Галстук", "transcription": "", "audio": "cravata.mp3"},
+    {"ro": "Fustă", "ru": "Юбка", "transcription": "", "audio": "fusta.mp3"},
+    {"ro": "Pantofi", "ru": "Туфли", "transcription": "", "audio": "pantofi.mp3"},
+    {"ro": "Ghete", "ru": "Ботинки", "transcription": "", "audio": "ghete.mp3"},
+    {"ro": "Botine", "ru": "Ботильоны", "transcription": "", "audio": "botine.mp3"},
+    {"ro": "Adidași", "ru": "Кроссовки", "transcription": "", "audio": "adidasi.mp3"},
+    {"ro": "Bascheți", "ru": "Кеды", "transcription": "", "audio": "bascheti.mp3"},
+    {"ro": "Cizme", "ru": "Сапоги", "transcription": "", "audio": "cizme.mp3"}
+  ],
+  "dialogs": [
+    [
+      {"ro": "De ce culoare este/sunt ...?", "ru": "Какого цвета ...?", "transcription": "", "audio": "de_ce_culoare.mp3"}
+    ],
+    [
+      {"ro": "... e / sunt de culoare albă / albastră / galbenă / verde / roșie / neagră / bej / roz / mov / maro / gri.", "ru": "... белого / синего / желтого / зеленого / красного / черного / бежевого / розового / фиолетового / коричневого / серого цвета.", "transcription": "", "audio": "sunt_de_culoare.mp3"}
+    ],
+    [
+      {"ro": "Ce statură (înălțime) sunteți/aveți?", "ru": "Какого вы роста?", "transcription": "", "audio": "ce_statura_aveti.mp3"},
+      {"ro": "Eu am înălțime/statură un metru șaptezeci și doi.", "ru": "У меня рост метр семьдесят два.", "transcription": "", "audio": "am_inaltime.mp3"}
+    ],
+    [
+      {"ro": "Eu sunt înalt/ă / scund/ă / de statură medie.", "ru": "Я высокий/ая / низкий/ая / среднего роста.", "transcription": "", "audio": "sunt_inalt.mp3"}
+    ],
+    [
+      {"ro": "Ce greutate aveți?", "ru": "Какой у вас вес?", "transcription": "", "audio": "ce_greutate_aveti.mp3"},
+      {"ro": "Eu am 80 de kilograme.", "ru": "Я вешу 80 килограмм.", "transcription": "", "audio": "am_80_kg.mp3"}
+    ],
+    [
+      {"ro": "Sunt zvelt/ă.", "ru": "Я стройный/ая.", "transcription": "", "audio": "sunt_zvelt.mp3"},
+      {"ro": "Am siluetă sportivă.", "ru": "У меня спортивная фигура.", "transcription": "", "audio": "am_silueta_sportiva.mp3"}
+    ],
+    [
+      {"ro": "Ce culoare sunt ochii dvs?", "ru": "Какого цвета ваши глаза?", "transcription": "", "audio": "ce_culoare_ochi.mp3"},
+      {"ro": "Eu am ochi gri-verzi.", "ru": "У меня серо-зеленые глаза.", "transcription": "", "audio": "am_ochi_gri_verzi.mp3"}
+    ],
+    [
+      {"ro": "Ce culoare este părul dvs?", "ru": "Какого цвета ваши волосы?", "transcription": "", "audio": "ce_culoare_par.mp3"},
+      {"ro": "Eu am păr de culoare închisă.", "ru": "У меня волосы темного цвета.", "transcription": "", "audio": "am_par_inchis.mp3"}
+    ],
+    [
+      {"ro": "Dumneavoastră purtați ochelari?", "ru": "Вы носите очки?", "transcription": "", "audio": "purtati_ochelari.mp3"},
+      {"ro": "Nu port ochelari.", "ru": "Я не ношу очки.", "transcription": "", "audio": "nu_port_ochelari.mp3"}
+    ],
+    [
+      {"ro": "Câte degete aveți pe braț/mână?", "ru": "Сколько у вас пальцев на руке?", "transcription": "", "audio": "cate_degete_mana.mp3"},
+      {"ro": "Eu am cinci degete.", "ru": "У меня пять пальцев.", "transcription": "", "audio": "am_cinci_degete.mp3"}
+    ],
+    [
+      {"ro": "Câte degete aveți pe ambele mâini?", "ru": "Сколько пальцев у вас на обеих руках?", "transcription": "", "audio": "cate_degete_ambele.mp3"},
+      {"ro": "Eu am zece degete.", "ru": "У меня десять пальцев.", "transcription": "", "audio": "am_zece_degete.mp3"}
+    ],
+    [
+      {"ro": "Aveți / purtați barbă / mustață?", "ru": "У вас есть / вы носите бороду / усы?", "transcription": "", "audio": "aveti_barba.mp3"},
+      {"ro": "Eu nu port barbă. / Da, am barbă.", "ru": "Я не ношу бороду. / Да, у меня есть борода.", "transcription": "", "audio": "nu_port_barba.mp3"}
+    ],
+    [
+      {"ro": "Descrieți înfățișarea Dvs.?", "ru": "Опишите вашу внешность?", "transcription": "", "audio": "descrieti_infatisarea.mp3"},
+      {"ro": "Descrieți cum arătați?", "ru": "Опишите, как вы выглядите?", "transcription": "", "audio": "descrieti_cum_aratati.mp3"},
+      {"ro": "Descrieți cum arată soția / bunica / mama Dvs.?", "ru": "Опишите, как выглядит ваша жена / бабушка / мама?", "transcription": "", "audio": "descrieti_cum_arata_sotia.mp3"}
+    ],
+    [
+      {"ro": "Eu sunt de statură medie, am un metru șaptezeci și doi de centimetri.", "ru": "Я среднего роста, у меня метр семьдесят два сантиметра.", "transcription": "", "audio": "sunt_statura_medie.mp3"},
+      {"ro": "El/ea este înalt/ă.", "ru": "Он/она высокий/ая.", "transcription": "", "audio": "el_ea_este_inalt.mp3"}
+    ],
+    [
+      {"ro": "Eu sunt zvelt/ă.", "ru": "Я стройный/ая.", "transcription": "", "audio": "sunt_zvelt_2.mp3"},
+      {"ro": "El/ea este zveltă / plinuț/ă.", "ru": "Она стройная / полная.", "transcription": "", "audio": "el_ea_este_zvelta.mp3"}
+    ],
+    [
+      {"ro": "Eu am păr de culoare închisă.", "ru": "У меня темные волосы.", "transcription": "", "audio": "am_par_inchis_2.mp3"},
+      {"ro": "El/ea are păr blond/negru.", "ru": "У него/нее светлые/черные волосы.", "transcription": "", "audio": "el_ea_are_par.mp3"},
+      {"ro": "Și ochi gri-verzi.", "ru": "И серо-зеленые глаза.", "transcription": "", "audio": "si_ochi_gri_verzi.mp3"}
+    ],
+    [
+      {"ro": "Dvs. purtați cercei, inel, brățară, ceas, verighetă / inel de logodnă?", "ru": "Вы носите серьги, кольцо, браслет, часы, обручальное кольцо / помолвочное кольцо?", "transcription": "", "audio": "purtati_cercei.mp3"},
+      {"ro": "Da, eu port. / Nu, nu port.", "ru": "Да, я ношу. / Нет, я не ношу.", "transcription": "", "audio": "da_port.mp3"}
+    ],
+    [
+      {"ro": "Ce haine purtați?", "ru": "Какую одежду вы носите?", "transcription": "", "audio": "ce_haine_purtati.mp3"},
+      {"ro": "În ce sunteți îmbrăcat/ă?", "ru": "Во что вы одеты?", "transcription": "", "audio": "in_ce_sunteti_imbracat.mp3"},
+      {"ro": "Ce haine poartă domnul/doamna din spatele / în față / din dreapta / din stânga Dvs?", "ru": "Какую одежду носит господин/госпожа сзади / спереди / справа / слева от вас?", "transcription": "", "audio": "ce_haine_poarta_domnul.mp3"}
+    ],
+    [
+      {"ro": "Eu sunt îmbrăcat în cămașă, costum albastru, pulover, blugi, rochie, sacou, pantaloni, tricou, bluză, cravată, fustă.", "ru": "Я одет в рубашку, синий костюм, свитер, джинсы, платье, пиджак, брюки, футболку, блузку, галстук, юбку.", "transcription": "", "audio": "sunt_imbracat_in.mp3"},
+      {"ro": "Sunt încălțat(ă) în pantofi / ghete / botine, adidași, bascheți, cizme.", "ru": "Я обут(а) в туфли / ботинки / ботильоны, кроссовки, кеды, сапоги.", "transcription": "", "audio": "sunt_incaltat.mp3"}
+    ],
+    [
+      {"ro": "El are cămașă albastră / tricou / pulover și blugi albaștri / pantaloni.", "ru": "На нем синяя рубашка / футболка / свитер и синие джинсы / брюки.", "transcription": "", "audio": "el_are_camasa.mp3"},
+      {"ro": "Ea poartă rochie galbenă / bluză verde și fustă neagră.", "ru": "На ней желтое платье / зеленая блузка и черная юбка.", "transcription": "", "audio": "ea_poarta_rochie.mp3"}
+    ]
+  ]
+}
